@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>母亲节快乐</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        .image {
+            max-width: 400px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .typing {
+            font-size: 18px;
+            max-width: 600px;
+            text-align: center;
+            white-space: pre-line;
+            overflow: hidden;
+            border-right: 4px solid rgba(0, 0, 0, 0.75);
+            animation: typing 5s steps(50, end), blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: rgba(0, 0, 0, 0.75); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <img src="flower.png" alt="Mother's Day Flower" class="image">
+    <div class="typing" id="typing-text">
+        阿姨，母亲节快乐！希望这份小小的祝福能跨越时差和距离，带给你一份好心情！
+        也感谢培养出这么优秀的儿子麒麒（也就是我男朋友啦！）让我有机会收获更多的温暖。
+        期待下次见面，想你们！ 祝身体健康，笑口常开！节日快乐哦！ ❤️
+    </div>
+</body>
+</html>
